@@ -5,6 +5,8 @@ import { useFetchArticles } from "../actions";
 import { useSelector } from "react-redux";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
+import Footer from "./Footer";
+
 import Card from "./Card";
 import Tags from "./Tags";
 export default function Home() {
@@ -48,6 +50,7 @@ export default function Home() {
         </div>
         <Tags />
       </main>
+      <Footer />
     </React.Fragment>
   );
 }
