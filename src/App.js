@@ -2,7 +2,6 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Home from "./components/Home";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
-import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
         <Route exact path="/register" component={RegisterForm} />
         <Redirect from="/articles" exact to="/" />
       </Switch>
-      <Footer />
     </>
   );
 }
