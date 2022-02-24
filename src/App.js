@@ -2,6 +2,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Home from "./components/Home";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
+
 import "./App.css";
 
 function App() {

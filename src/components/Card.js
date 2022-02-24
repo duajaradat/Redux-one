@@ -1,16 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { isValidToken } from "../helper/tokens";
 
 export default function Card({ article }) {
   function formatDate(string) {
     const date = new Date(string);
     return date.toDateString();
   }
+  const handleFav = () => {
+    console.log("like");
+  };
   return (
     <div className="article-container">
       <div className="article-items">
-        <a className="author-img-link" href="">
+        <Link className="author-img-link" to="/article">
           <img className="author-img" src={article.author.image} />
-        </a>
+        </Link>
 
         <div className="info">
           <a className="author" href="#">
@@ -18,12 +23,14 @@ export default function Card({ article }) {
           </a>
           <span className="date">{formatDate(article.createdAt)}</span>
         </div>
-        <div className="btn-container">
-          <button className="btn-fav">
-            <i className="fa fa-heart" aria-hidden="true"></i>
-            {article.favoritesCount}
-          </button>
-        </div>
+        {isValidToken() && (
+          <div className="btn-container">
+            <button onClick={handleFav} className="btn-fav">
+              <i className="fa fa-heart" aria-hidden="true"></i>
+              {article.favoritesCount}
+            </button>
+          </div>
+        )}
       </div>
       <a className="items-body" href="#">
         <h1>{article.title}</h1>

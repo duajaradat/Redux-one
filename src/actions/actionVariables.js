@@ -2,3 +2,10 @@ export const FETCH_ARTICLES = "FETCH_ARTICLES";
 export const FETCH_TAGS = "FETCH_TAGS";
 export const FETCH_TAGGED_ARTICLES = "FETCH_TAGGED_ARTICLES";
 export const SET_SELECT_TAGS = "SET_SELECT_TAGS";
+
+//  Authentication Action
+export const USER_REGISTER = "USER_REGISTER";
+export const NOT_USER_REGISTER = "NOT_USER_REGISTER";
+
+export const USER_LOGIN_SUCCESS = "USER_LOGIN_SUCCESS";
+export const USER_LOGIN_FAILURE = "USER_LOGIN_FAILURE";

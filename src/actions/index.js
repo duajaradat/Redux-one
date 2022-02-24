@@ -6,6 +6,7 @@ import {
   FETCH_TAGGED_ARTICLES,
   SET_SELECT_TAGS,
 } from "./actionVariables";
+
 //  Fetch tags data from api
 export const useFetchTags = () => {
   const dispatch = useDispatch();

@@ -17,7 +17,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  margin: 0 4rem;
+  margin: 0.5rem 4rem;
+  height: 3rem;
 }
 .logo-name {
   color: #5cb85c !important;
@@ -37,6 +38,11 @@ header {
 }
 .li-navbar a:hover {
   color: #373a3c;
+}
+.user-img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
 }
 .info {
   line-height: 1rem;
@@ -195,6 +201,7 @@ ul {
 .account-text {
   color: #5cb85c;
   text-decoration: none;
+  cursor: pointer;
 }
 .form-group {
   margin: 0;

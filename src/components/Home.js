@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { useFetchArticles } from "../actions";
 import { useSelector } from "react-redux";
+
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 import Footer from "./Footer";
