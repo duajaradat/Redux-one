@@ -7,6 +7,7 @@ import {
   SET_SELECT_TAGS,
 } from "./actionVariables";
 
+//  Fetch tags data from api
 export const useFetchTags = () => {
   const dispatch = useDispatch();
   const tags = useSelector((state) => state.tags);
@@ -22,6 +23,7 @@ export const useFetchTags = () => {
   return [tags, fetchTags];
 };
 
+//  Fetch articles data from api
 export const useFetchArticles = () => {
   const dispatch = useDispatch();
   const articles = useSelector((state) => state.articles);
@@ -42,6 +44,7 @@ export const useFetchArticles = () => {
   return [articles, fetchArticles];
 };
 
+// Fetch the articles based on the tag
 export const useFetchTaggedArticles = () => {
   const dispatch = useDispatch();
   const taggedArticles = useSelector((state) => state.articles);
